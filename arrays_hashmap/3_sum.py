@@ -3,6 +3,9 @@ from typing import List
 
 
 def threeSum( nums: List[int]) -> List[List[int]]:
+    if min(nums) > 0: 
+            return []
+        
     nums = sorted(nums)    # sort the array to make it easier to find the triplets
     # Sorting:        O(n log n)
 
