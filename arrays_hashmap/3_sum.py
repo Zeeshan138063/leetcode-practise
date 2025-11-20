@@ -13,6 +13,9 @@ def threeSum( nums: List[int]) -> List[List[int]]:
     ans = []
     # For i loop: runs n times
     for i in range(n-2):
+        
+         if nums[i] > 0: 
+                break
 
          # optimization step
          if i > 0 and nums[i]== nums[i-1]:
